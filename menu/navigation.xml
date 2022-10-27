@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+	  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+        android:id="@+id/Dish_Wine"
+        android:icon="@drawable/arrow"
+        android:title="Dish Wine" />
+
+	<item
+        android:id="@+id/Pairing"
+        android:icon="@drawable/arrow"
+        android:title="Pair Wine" />
+
+
+
+	<item
+        android:id="@+id/Recommendation"
+        android:icon="@drawable/arrow"
+        android:title="Wine suggest" />
+
+</menu>

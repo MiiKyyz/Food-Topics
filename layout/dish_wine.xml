@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/panel"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Dish Pairing for Wine"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wine"
+                android:textColorHint="@color/colorPrimary"
+            android:padding="5dp"
+            android:background="@drawable/edit_background"
+            android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:id="@+id/txt_auto" />
+
+
+            <Button
+                android:text="Search Wine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:cornerRadius="11dp"
+                android:id="@+id/btn_search" />
+            <TextView
+                android:text="wine"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wine_txt" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/linearLayout2" />
+
+            <TextView
+                android:text="description"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/description" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:id="@+id/linearLayout3" />
+
+            <TextView
+                android:text=""
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/deserts" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

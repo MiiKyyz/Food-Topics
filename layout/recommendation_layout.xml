@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/panel"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Wine Recommendation"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wine"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/colorPrimary"
+        android:padding="5dp"
+        android:background="@drawable/edit_background"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/txt_auto" />
+    <Button
+        android:text="Search Wine"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cornerRadius="11dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listWine" />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+	<item android:title="Meal Recipe">
+		<menu>
+			<item
+				android:id="@+id/Recipes"
+				android:icon="@drawable/ic_menu_camera"
+				android:title="Search Recipes" />
+			<item
+				android:id="@+id/Ingredients"
+				android:icon="@drawable/ic_menu_gallery"
+				android:title="Ingredients Info" />
+		
+		</menu>
+	</item>
+
+	<item android:title="Drinks">
+		<menu>
+			<item
+                android:id="@+id/Wine"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Wine" />
+			
+		</menu>
+	</item>
+	
+	
+	
+
+</menu>

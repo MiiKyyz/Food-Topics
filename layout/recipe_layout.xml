@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/panel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+
+        <TextView
+        android:text="Search Recipes"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Dish"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:padding="5dp"
+            android:background="@drawable/edit_background"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/txt_auto"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/spinner_background"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/FilterLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4">
+                <TextView
+                    android:textColor="#ffffff"
+                    android:layout_margin="8dp"
+                    android:text="Cuisine"
+                    android:textSize="20sp"
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Cuisine" />
+                <Spinner
+                    android:layout_margin="8dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Cuisine_spinner" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout6">
+                <TextView
+                    android:text="Diet"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4" />
+                <Spinner
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#ffffff"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Diet_spinner" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout7">
+                <TextView
+                    android:layout_margin="8dp"
+                    android:text="Intolerances"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2" />
+                <Spinner
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#ffffff"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Intolerances_spinner" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout8">
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:text="Type"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView7" />
+                <Spinner
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:textColor="#ffffff"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Type_spinner" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout10">
+
+
+            <Button
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Search"
+                app:cornerRadius="11dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn" />
+            <ListView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

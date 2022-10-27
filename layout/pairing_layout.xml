@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/panel"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Wine Pairing"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        
+        
+        
+        />
+
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Food"
+        android:id="@+id/txt_auto"
+        android:textColorHint="@color/colorPrimary"
+        android:padding="5dp"
+        android:background="@drawable/edit_background"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <Button
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="11dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/btn" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/spinner_background"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/linearLayout">
+            <TextView
+                android:text="Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:textSize="21sp"
+                android:textColor="@color/panel"
+                android:textStyle="bold"
+                android:id="@+id/Title" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:id="@+id/img" />
+            <TextView
+                android:text="Description"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/panel"
+                android:textStyle="bold"
+                android:id="@+id/Description" />
+            <TextView
+                android:text="Text"
+                android:textSize="15sp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/panel"
+                android:textStyle="bold"
+                android:id="@+id/wines" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/buy"
+                app:cornerRadius="11dp"
+               
+                android:textColor="@color/colorPrimaryDark"
+                app:backgroundTint="@color/panel" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
